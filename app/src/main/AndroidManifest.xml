@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cortez.cryptomask">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".TextOptionsActivity" />
+        <activity android:name=".TextEncryptionActivity" />
+        <activity android:name=".EncryptionResultActivity" />
+        <activity android:name=".TextDecryptionActivity" />
+        <activity android:name=".ImageOptionsActivity" />
+        <activity android:name=".ImageCapturingActivity" />
+        <activity android:name=".TextDecryptionResultActivity" />
+        <activity android:name=".ImageEncodeActivity" />
+        <activity android:name=".CipherTextDeletionActivity" />
+        <activity android:name=".ImageDecryptionActivity" />
+        <activity android:name=".ImageDeletionActivity" />
+        <activity android:name=".ImageDecryptionResultActivity" />
+        <activity android:name=".LogInActivity" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".ChangePasswordActivity" />
+        <activity android:name=".SecretMessageOptionsActivity" />
+        <activity android:name=".RSAOptionsActivity" />
+        <activity android:name=".RSAKeysActivity" />
+        <activity android:name=".RSAShowPublicKeysActivity" />
+        <activity android:name=".RSAEncryptionSetUpActivity" />
+        <activity android:name=".RSAEncryptionResultActivity" />
+        <activity android:name=".RSADecryptionSetUpActivity" />
+        <activity android:name=".RSADecryptionResultActivity" />
+        <activity android:name=".ManageOthersPublicKeysActivity" />
+        <activity android:name=".ManageOthersPublicKeysShowKeysActivity" />
+        <activity android:name=".SteganographyEncryptionActivity" />
+        <activity android:name=".SteganographyDecryptionActivity" />
+        <activity android:name=".SteganographyOptionsActivity"></activity>
+    </application>
+
+</manifest>

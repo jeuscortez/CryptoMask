@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1eca3b"
+    tools:context="com.example.cortez.cryptomask.RSAShowPublicKeysActivity">
+
+
+    <Button
+        android:text="Main Menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="26dp"
+        android:id="@+id/returnFromPKeys"
+        android:layout_below="@+id/PKResultKeyE"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:id="@+id/EmailButton"
+        android:layout_marginTop="10dp"
+        android:text="Send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SubjectForEmail"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:text="My Public Keys"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PKScreenLabel"
+        android:layout_marginTop="33dp"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textStyle="normal|bold"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/PKResultKeyN"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/PKScreenLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/PKResultKeyE"
+        android:textSize="20sp"
+        android:layout_below="@+id/PKResultKeyN"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        />
+
+
+    <TextView
+        android:id="@+id/MessageTextView"
+        android:layout_marginTop="10dp"
+        android:text="Email Public Keys"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/returnFromPKeys"
+        />
+
+    <TextView
+        android:id="@+id/EmailToMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EMail To"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:layout_below="@+id/MessageTextView"/>
+    <EditText
+        android:id="@+id/EmailofRecepient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EmailToMessage"
+        android:layout_centerHorizontal="true"
+        android:background="#999999ff"
+        android:hint="123abc@gmail.com"
+        />
+    <TextView
+        android:id="@+id/SubjectMessage"
+        android:text="Subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EmailofRecepient"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        />
+    <EditText
+        android:id="@+id/SubjectForEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SubjectMessage"
+        android:layout_centerHorizontal="true"
+        android:background="#999999ff"
+        android:hint="Enter Subject Here"
+        />
+</RelativeLayout>

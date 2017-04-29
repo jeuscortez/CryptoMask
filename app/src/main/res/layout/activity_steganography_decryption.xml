@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1eca3b"
+    tools:context="com.example.cortez.cryptomask.SteganographyDecryptionActivity">
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please Select Image to Decode"
+        android:textStyle="bold"
+        android:textSize="24dp" />
+
+    <Button
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select and Decode"
+        android:id="@+id/ButtonDecodeatation" />
+
+    <TextView
+        android:background="#999999ff"
+        android:layout_marginTop="30dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:hint="Decryption"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/EditTextDecodedMessage"
+        android:layout_below="@+id/ButtonDecodeatation"/>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EditTextDecodedMessage"
+        android:layout_centerHorizontal="true"
+        android:text="Finished"
+        android:id="@+id/ReturnFromSteganographyDecryption"
+        />
+
+</RelativeLayout>

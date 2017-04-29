@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.cortez.cryptomask.SignUpActivity"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:gravity="top|center_horizontal"
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Please Create \n Username and Password"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="24sp"
+        android:layout_weight="0.07" />
+
+    <EditText
+        android:layout_marginTop="70dp"
+        android:id="@+id/editTextUserName"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#ADD8E6"
+        android:hint="User Name">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:layout_marginTop="15dp"
+        android:id="@+id/editTextPassword"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:background="#ADD8E6"/>
+
+    <EditText
+        android:layout_marginTop="15dp"
+        android:id="@+id/editTextConfirmPassword"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:background="#ADD8E6"/>
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/createAccountBttn"
+        android:text="Create Account"
+        android:layout_gravity="center"
+        android:background="#FF33B5E5"
+        />
+</LinearLayout>

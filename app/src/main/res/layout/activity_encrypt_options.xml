@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_encrypt_options"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#072059"
+    tools:context="com.example.cortez.cryptomask.TextOptionsActivity">
+
+    <Button
+        android:text="Mask Text"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="54dp"
+        android:background="#33e5d9"
+        android:id="@+id/TextEncrypter"
+        android:textSize="14sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Un-Mask"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/TextEncrypter"
+        android:layout_alignLeft="@+id/TextEncrypter"
+        android:layout_alignStart="@+id/TextEncrypter"
+        android:layout_marginTop="104dp"
+        android:background="#33e5d9"
+        android:id="@+id/TextDecrypter"
+        android:textSize="14sp" />
+
+    <Button
+        android:text="Delete Cipher Text"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/TextDecrypter"
+        android:layout_alignLeft="@+id/TextEncrypter"
+        android:layout_alignStart="@+id/TextEncrypter"
+        android:layout_marginTop="104dp"
+        android:background="#33e5d9"
+        android:id="@+id/CTextDeletion"
+        android:textSize="14sp" />
+</RelativeLayout>

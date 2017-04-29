@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1eca3b"
+    tools:context="com.example.cortez.cryptomask.RSAEncryptionResultActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/RSAEncryptionResult"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/returntoMainfromRSAencryptionresult"
+        android:text="Main Menu"
+        android:layout_below="@+id/RSAEncryptionResult"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:id="@+id/MessageTextViewForEncryptionEmail"
+        android:layout_marginTop="15dp"
+        android:text="E-mail RSA Encryption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/returntoMainfromRSAencryptionresult"
+        />
+
+    <TextView
+        android:id="@+id/EmailToMessageInputInEncryptionResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mail To"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:layout_below="@+id/MessageTextViewForEncryptionEmail"/>
+    <EditText
+        android:id="@+id/EmailofRecepientsample"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EmailToMessageInputInEncryptionResult"
+        android:layout_centerHorizontal="true"
+        android:hint="123abc@gmail.com"
+        android:background="#999999ff"
+        />
+    <TextView
+        android:id="@+id/SubjectMessageER"
+        android:text="Subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EmailofRecepientsample"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        />
+    <EditText
+        android:id="@+id/SampleSubjectForEmailInEncryptionResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SubjectMessageER"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter Subject Here"
+        android:background="#999999ff"
+        />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/EmailEncryptionBttn"
+        android:text="MAIL ENCRYPTION"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/SampleSubjectForEmailInEncryptionResult"
+        />
+</RelativeLayout>

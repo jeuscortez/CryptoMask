@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#072059"
+    tools:context="com.example.cortez.cryptomask.RSAKeysActivity">
+
+    <Button
+        android:text="Generate Keys"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="75dp"
+        android:background="#33e5d9"
+        android:id="@+id/generatersakeys"
+        android:textSize="14sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="My Public Keys"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/generatersakeys"
+        android:layout_alignLeft="@+id/generatersakeys"
+        android:layout_alignStart="@+id/generatersakeys"
+        android:layout_marginTop="75dp"
+        android:background="#33e5d9"
+        android:id="@+id/showpublickeys"
+        android:textSize="14sp" />
+
+    <Button
+        android:text="Create New RSA Keys"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="75dp"
+        android:layout_below="@+id/showpublickeys"
+        android:layout_alignLeft="@+id/showpublickeys"
+        android:layout_alignStart="@+id/showpublickeys"
+        android:background="#33e5d9"
+        android:id="@+id/recreatenewrsakeys"
+        android:textSize="14sp" />
+
+</RelativeLayout>

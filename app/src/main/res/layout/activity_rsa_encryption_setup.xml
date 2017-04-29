@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1eca3b"
+    tools:context="com.example.cortez.cryptomask.RSAEncryptionSetUpActivity">
+
+    <TextView
+        android:text="Please enter text you wish to encrypt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/DirectionsforRSAEncryption"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:textSize="16sp"
+        android:textAllCaps="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:inputType="text"
+        android:gravity="top|left"
+        android:background="#999999ff"
+        android:ems="10"
+        android:id="@+id/UserInputForRSAEncryption"
+        android:layout_below="@+id/Directions"
+        android:layout_marginTop="37dp"
+        android:layout_alignEnd="@+id/DirectionsforRSAEncryption"
+        android:layout_alignStart="@+id/DirectionsforRSAEncryption" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="If Public Keys have been saved before:"
+        android:textAlignment="center"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif"
+        android:textSize="16sp"
+        android:layout_below="@+id/UserInputForRSAEncryption"
+        android:id="@+id/CaptionForSavedKeys"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="true"/>
+
+    <TextView
+        android:layout_marginTop="6dp"
+        android:id="@+id/LabelToInputNameofKeysSaved"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Name that they were saved as"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/CaptionForSavedKeys"
+        />
+
+    <EditText
+        android:layout_marginTop="2dp"
+        android:id="@+id/UserInputToSearchDBforPKs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LabelToInputNameofKeysSaved"
+        android:layout_alignLeft="@+id/UserInputForRSAEncryption"
+        android:layout_alignRight="@+id/UserInputForRSAEncryption"
+        android:inputType="text"
+        android:background="#999999ff"
+        android:ems="20"
+        />
+    <Button
+        android:text="Get Primary Keys and Encrypt"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/getOthersRSAPKSTextandEncryptBttn"
+        android:layout_below="@id/UserInputToSearchDBforPKs"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="If Public Keys are New:"
+        android:textAlignment="center"
+        android:layout_marginTop="11dp"
+        android:fontFamily="sans-serif"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/getOthersRSAPKSTextandEncryptBttn"
+        android:id="@+id/CaptionFornewKeys"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="true"/>
+
+    <TextView
+        android:layout_marginTop="6dp"
+        android:id="@+id/LabelForKeyN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please enter Public Key N"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:layout_below="@+id/CaptionFornewKeys"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="true"/>
+
+    <EditText
+        android:layout_marginTop="2dp"
+        android:id="@+id/UserInputKeyN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LabelForKeyN"
+        android:layout_alignLeft="@+id/UserInputForRSAEncryption"
+        android:layout_alignRight="@+id/UserInputForRSAEncryption"
+        android:inputType="number"
+        android:background="#999999ff"
+        android:ems="20"
+        />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/LabelForKeyE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please enter Public Key E"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:layout_below="@+id/UserInputKeyN"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="true"/>
+
+    <EditText
+        android:layout_marginTop="2dp"
+        android:id="@+id/UserInputKeyE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LabelForKeyE"
+        android:layout_alignLeft="@+id/UserInputForRSAEncryption"
+        android:layout_alignRight="@+id/UserInputForRSAEncryption"
+        android:inputType="number"
+        android:background="#999999ff"
+        android:ems="20"
+        />
+
+    <TextView
+        android:layout_marginTop="6dp"
+        android:id="@+id/LabelForOwnerofKeys"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please enter a name to label the keys to identify them later"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:layout_below="@+id/UserInputKeyE"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="true"/>
+
+    <EditText
+        android:layout_marginTop="2dp"
+        android:id="@+id/UserInputNametoSaveKeysWith"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LabelForOwnerofKeys"
+        android:layout_alignLeft="@+id/UserInputForRSAEncryption"
+        android:layout_alignRight="@+id/UserInputForRSAEncryption"
+        android:inputType="text"
+        android:background="#999999ff"
+        android:ems="20"
+        />
+
+    <Button
+        android:text="Save Primary Keys and Encrypt"
+        android:layout_width="289dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/StartRSATextEncryptionBttn"
+        android:layout_below="@+id/UserInputNametoSaveKeysWith"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+    <Button
+        android:layout_marginTop="5dp"
+        android:id="@+id/UseMyKeysButton"
+        android:textSize="16sp"
+        android:text="USE MY KEYS FOR NOW"
+        android:layout_below="@+id/StartRSATextEncryptionBttn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

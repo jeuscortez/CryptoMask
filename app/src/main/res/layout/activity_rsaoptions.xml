@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#072059"
+    tools:context="com.example.cortez.cryptomask.RSAOptionsActivity">
+
+    <Button
+        android:text="My Keys"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:background="#33e5d9"
+        android:id="@+id/rsageneratekeys"
+        android:textSize="14sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Encrypt Secret Message"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/rsageneratekeys"
+        android:layout_alignLeft="@+id/rsageneratekeys"
+        android:layout_alignStart="@+id/rsageneratekeys"
+        android:layout_marginTop="70dp"
+        android:background="#33e5d9"
+        android:id="@+id/rsaencryptmessage"
+        android:textSize="14sp" />
+
+    <Button
+        android:text="Decrypt Secret Message"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/rsaencryptmessage"
+        android:layout_alignLeft="@+id/rsaencryptmessage"
+        android:layout_alignStart="@+id/rsaencryptmessage"
+        android:layout_marginTop="70dp"
+        android:background="#33e5d9"
+        android:id="@+id/rsadecryptmessage"
+        android:textSize="14sp" />
+
+    <Button
+        android:text="Other Persons Public Keys"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/rsadecryptmessage"
+        android:layout_alignLeft="@+id/rsadecryptmessage"
+        android:layout_alignStart="@+id/rsadecryptmessage"
+        android:layout_marginTop="70dp"
+        android:background="#33e5d9"
+        android:textSize="14sp"
+        android:id="@+id/rsamanageOthersPks"
+        />
+
+</RelativeLayout>

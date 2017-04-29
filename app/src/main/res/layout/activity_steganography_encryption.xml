@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1eca3b"
+    tools:context="com.example.cortez.cryptomask.SteganographyEncryptionActivity">
+
+    <TextView
+        android:id="@+id/TextViewMsgStego"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please Select Image to Encrypt"
+        android:textSize="23dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/EditTxtImage"
+        android:hint="Image Path"
+        android:textSize="12dp"
+        android:textStyle="italic|bold"
+        android:layout_below="@+id/TextViewMsgStego"
+        />
+
+    <Button
+        android:layout_below="@+id/EditTxtImage"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Image Select"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/ButtonSelect"/>
+
+    <TextView
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Please Enter Message To Encode"
+        android:textStyle="bold"
+        android:layout_below="@+id/ButtonSelect"
+        android:textSize="22dp"
+        android:id="@+id/MssInputTextView"/>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:background="#999999ff"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/message"
+        android:layout_below="@id/MssInputTextView"/>
+
+    <Button
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Image Encryption"
+        android:id="@+id/save"
+        android:layout_below="@+id/message"/>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/save"
+        android:layout_centerHorizontal="true"
+        android:text="Finished"
+        android:id="@+id/returnFromStegoEncryption"
+        />
+
+</RelativeLayout>

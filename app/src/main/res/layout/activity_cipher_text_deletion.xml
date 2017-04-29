@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.cortez.cryptomask.CipherTextDeletionActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1eca3b"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/DeleteCtextInstructionMsg"
+        android:text="Please Enter the ID of CipherText to Delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:fontFamily="sans-serif"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textAllCaps="true" />
+
+    <EditText
+        android:id="@+id/rowtoDelete"
+        android:layout_width="250dp"
+        android:layout_height="34dp"
+        android:layout_below="@+id/DeleteCtextInstructionMsg"
+        android:layout_gravity="center"
+        android:layout_marginTop="23dp"
+        android:background="#999999ff"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:layout_marginTop="5dp"
+        android:id="@+id/DeleteCtextButt"
+        android:background="#FF33B5E5"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Delete" />
+
+    <Button
+        android:layout_marginTop="5dp"
+    android:id="@+id/returntomainmenufromctextdeletion"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#FF33B5E5"
+        android:text="Main Menu" />
+
+    <ListView
+        android:id="@+id/thelisttodeletefrom"
+        android:layout_width="match_parent"
+
+        android:layout_height="226dp"
+        android:layout_below="@+id/CtexttoDelete"
+        android:layout_marginTop="27dp"
+        android:layout_weight="0.17" />
+
+</LinearLayout>

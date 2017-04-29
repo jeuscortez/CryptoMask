@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1eca3b"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.cortez.cryptomask.ManageOthersPublicKeysActivity">
+
+    <TextView
+        android:id="@+id/DeleteOrSeePKMessage"
+        android:text="Please Select Public Keys to Delete Or See. Choose by ID number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:fontFamily="sans-serif"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textAllCaps="true" />
+
+    <EditText
+        android:id="@+id/pkrowtodelete"
+        android:layout_width="250dp"
+        android:layout_height="34dp"
+        android:ems="10"
+        android:background="#999999ff"
+        android:layout_below="@+id/DeleteOrSeePKMessage"
+        android:layout_gravity="center"
+        android:layout_marginTop="23dp"
+        android:inputType="number" />
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:layout_marginTop="8dp"
+        android:text="Delete Persons Public Keys"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:id="@+id/searchPublicKeystoDeleteButt"
+        android:background="#FF33B5E5"/>
+
+    <Button
+        android:layout_marginTop="8dp"
+        android:layout_gravity="right"
+        android:layout_alignParentRight="true"
+        android:text="See Persons Public Keys"
+        android:layout_width="130dp"
+        android:id="@+id/SearchKeysToView"
+        android:layout_height="wrap_content"
+        android:background="#FF33B5E5"
+        />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_marginTop="8dp"
+        android:id="@+id/returnfromPKmanaging"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#FF33B5E5"
+        android:text="Main Menu" />
+
+    <ListView
+        android:id="@+id/thePublicKeyslisttodeletefrom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/otherspublickeysrowtodelete"
+        android:layout_marginTop="27dp" />
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_image_encode"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cortez.cryptomask.ImageEncodeActivity"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#1eca3b"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/imagesuccessmessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Image Encoded"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="86dp"
+            tools:layout_editor_absoluteY="30dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/encodedimage"
+        android:layout_width="350dp"
+        android:layout_height="240dp"
+        android:src="@drawable/androidsecurity" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Image New Form"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            />
+
+        <ScrollView
+            android:id="@+id/scrollableID"
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"
+            android:scrollbars="vertical"
+            android:fillViewport="true"
+            >
+            <TextView
+                android:id="@+id/encodedimagetext"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:textSize="18sp"
+                android:textAllCaps="true"
+                />
+
+        </ScrollView>
+
+        <Button
+            android:layout_marginTop="5dp"
+            android:id="@+id/returntoMainfromimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FF33B5E5"
+            android:layout_below="@id/encodedimage"
+            android:text="Main Menu"
+            tools:layout_editor_absoluteX="136dp"
+            tools:layout_editor_absoluteY="424dp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
