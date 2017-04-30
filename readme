@@ -1,0 +1,6 @@
+Crypto Mask is my Senior Project and first Android app. 
+It is an Android Application with the purpose of adding security and privacy to users' data. 
+It uses Cryptography and Steganography to secure images and text.
+It also uses an SQLite Database to store certain encryptions.
+The Application has some bugs but it is functional. 
+I will continue to fix bugs and add comments to important functions.
